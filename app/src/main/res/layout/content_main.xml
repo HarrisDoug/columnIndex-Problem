@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TimetableActivity"
+    tools:showIn="@layout/app_bar_main"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+
+        android:paddingTop="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lessonCardView"
+        card_view:cardElevation="2dp"
+
+        app:cardUseCompatPadding="true"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="375px"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageView"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Placeholder text"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="6dp"
+                android:id="@+id/primaryText"
+                android:layout_alignBottom="@id/imageView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/md_white_1000"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Placeholder text"
+                android:textSize="14sp"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/secondaryText"
+                android:layout_below="@id/imageView"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_below="@id/lessonCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placeholder"
+        android:textSize="16dp"
+        android:id="@+id/textViewDayOfWeek"/>\
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_below="@id/textViewDayOfWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Period 1"
+        android:textSize="16dp"
+        android:id="@+id/textViewPeriod1"/>
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_below="@id/textViewPeriod1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Period 2"
+        android:textSize="16dp"
+        android:id="@+id/textViewPeriod2"/>
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_below="@id/textViewPeriod2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Period 3"
+        android:textSize="16dp"
+        android:id="@+id/textViewPeriod3"/>
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_below="@id/textViewPeriod3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Period 4"
+        android:textSize="16dp"
+        android:id="@+id/textViewPeriod4"/>
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_below="@id/textViewPeriod4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Period 5"
+        android:textSize="16dp"
+        android:id="@+id/textViewPeriod5"/>
+</RelativeLayout>
